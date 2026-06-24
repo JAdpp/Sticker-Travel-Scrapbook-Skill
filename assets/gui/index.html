@@ -520,7 +520,7 @@
         schemaVersion: 1,
         title: "新的旅行手帐项目",
         description: "",
-        styleBible: "东亚粘贴式旅行手帐 + 小漫画日记；白边照片贴纸、手写中文、票根卡片、对话气泡、角色一致。",
+        styleBible: "东亚粘贴式旅行手帐；可选视觉路线：Q版贴纸漫画、黑白线描、地图信息图、拍立得照片拼贴或混合风格；白边照片贴纸、手写中文、票根卡片、地图碎片、胶带和稳定对象 ID。",
         characters: [],
         materials: [],
         generatedImages: [],
@@ -795,14 +795,14 @@
       const objects = page.objects.map(o => `${o.id} [${o.type}] ${o.area}: ${o.content}`).join("; ");
       const materials = state.project.materials.map(m => `${m.id} ${m.type}: ${m.label} ${m.note || ""}`).join("; ");
       const prompt = [
-        `Create a ${$("imageSize").value} East Asian sticker-style travel scrapbook / mini-comic page in Chinese.`,
+        `Create a ${$("imageSize").value} East Asian sticker-style travel scrapbook page in Chinese.`,
         `Project: ${state.project.title}.`,
         `Travel brief: ${state.project.description || "user will provide travel memories and materials"}.`,
         `Page: ${page.title}; form: ${page.form}; aspect/size: ${page.aspect || $("imageSize").value}.`,
         `Style bible: ${state.project.styleBible}.`,
         `Materials to incorporate: ${materials || "none yet; use clearly separated placeholder sticker slots"}.`,
         `Editable object slots: ${objects || "create clear replaceable IMG/TXT/CHR/STK/PNL/BG slots for the page"}.`,
-        "Visual language: handmade East Asian 手帐 collage, cute sticker scrapbook, white-border photo stickers, washi tape, torn paper, grid/notebook paper, ticket stubs, stamp marks, short handwritten Chinese labels, speech bubbles, small manga diary details, warm varied colors.",
+        "Visual language: follow the selected route from the style bible. The route may be cute sticker comic, black-and-white line sketch, map infographic scrapbook, polaroid photo collage, or hybrid. Keep handmade East Asian 手帐 cues: white-border object slots, washi tape, torn paper, grid/notebook paper, ticket-like scraps, map fragments, stamp marks, and short handwritten Chinese labels.",
         "Text handling: use large readable Chinese labels only; keep exact text short; avoid tiny paragraphs.",
         "Negative constraints: do not make a clean travel itinerary board, do not invent personal events, do not use proprietary character likenesses unless supplied, do not flatten slots into an uneditable poster."
       ].join("\n\n");

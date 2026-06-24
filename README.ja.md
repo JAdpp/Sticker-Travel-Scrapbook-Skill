@@ -6,25 +6,44 @@
 
 `sticker-travel-scrapbook` は、東アジア風のステッカー旅行スクラップブックやミニコミック旅行日記を作成、設計、修正、対話的に編集するための Codex Skill です。
 
-この Skill は、整った旅程表や写真集ではなく、記憶を中心にしたビジュアル制作を重視します。旅先の場面、気分、同行者、食べ物、小物、チケット風の紙片、写真スロット、ステッカー、マスキングテープ、小さな漫画的瞬間を扱います。
+この Skill は、整った旅程表や写真集ではなく、記憶を中心にしたビジュアル制作を重視します。旅先の場面、気分、同行者、食べ物、小物、チケット風の紙片、写真スロット、ステッカー、地図、ポラロイド、線画スケッチ、小さな漫画的瞬間を扱います。
 
 ## サンプルギャラリー
 
-以下は公開用に生成した安全なサンプルです。個人の旅行写真、商用キャラクター、ブランドマスコット、実在のチケット、個人の肖像は含まれていません。
+以下は公開用に生成した安全なサンプルです。個人の旅行写真、商用キャラクター、ブランドマスコット、実在のチケット、個人の肖像は含まれていません。同じ編集可能オブジェクトの流れで、かわいい漫画調だけでなく複数のビジュアルルートを扱えます。
 
 <table>
   <tr>
-    <td width="44%" rowspan="2" valign="top">
-      <strong>縦長ページ：京都の雨の寺町</strong><br>
+    <td width="50%" valign="top">
+      <strong>かわいいステッカー漫画ページ</strong><br>
       <img src="assets/examples/kyoto-rainy-temple.jpg" alt="京都の雨の寺町スクラップブック例" width="100%">
     </td>
-    <td width="56%" valign="top">
-      <strong>単ページ：ソウルの韓屋村と夜市</strong><br>
-      <img src="assets/examples/seoul-hanok-market.jpg" alt="ソウル韓屋村と夜市スクラップブック例" width="100%">
+    <td width="50%" valign="top">
+      <strong>白黒線画スケッチ</strong><br>
+      <img src="assets/examples/ink-line-rainy-temple.jpg" alt="白黒線画の旅行スクラップブック例" width="100%">
     </td>
   </tr>
   <tr>
-    <td width="56%" valign="top">
+    <td width="50%" valign="top">
+      <strong>地図つき情報グラフィック手帳</strong><br>
+      <img src="assets/examples/map-infographic-coastal-train.jpg" alt="地図情報グラフィックの旅行スクラップブック例" width="100%">
+    </td>
+    <td width="50%" valign="top">
+      <strong>ポラロイド写真コラージュ</strong><br>
+      <img src="assets/examples/polaroid-weekend-notes.jpg" alt="ポラロイド写真コラージュの旅行スクラップブック例" width="100%">
+    </td>
+  </tr>
+</table>
+
+追加のレイアウト例：
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>単ページ：ソウルの韓屋村と夜市</strong><br>
+      <img src="assets/examples/seoul-hanok-market.jpg" alt="ソウル韓屋村と夜市スクラップブック例" width="100%">
+    </td>
+    <td width="50%" valign="top">
       <strong>見開き：台湾の海沿い列車とランタンの旧市街</strong><br>
       <img src="assets/examples/taiwan-coastal-train.jpg" alt="台湾海沿い列車スクラップブック例" width="100%">
     </td>
@@ -35,6 +54,7 @@
 
 - 旅行素材を、スクラップブックに使いやすい記憶シーンへ整理します。
 - 東アジア風のステッカー構成、ミニコミック構成、ハイブリッドなコラージュ構成を設計します。
+- かわいいステッカー漫画、白黒線画、地図情報グラフィック、ポラロイド写真コラージュなどのビジュアルルートを選べます。
 - `P1-IMG1`、`P1-TXT1`、`P1-CHR1`、`P1-STK1`、`P1-PNL1` などの安定した ID を持つ編集可能なオブジェクト一覧を作ります。
 - 複数ページにわたるキャラクターとスタイルの一貫性を保ちます。
 - 新規生成や局所修正に使える画像生成プロンプトを作ります。
@@ -57,7 +77,10 @@ Sticker-Travel-Scrapbook/
     brand/
       banner.jpg
     examples/
+      ink-line-rainy-temple.jpg
       kyoto-rainy-temple.jpg
+      map-infographic-coastal-train.jpg
+      polaroid-weekend-notes.jpg
       seoul-hanok-market.jpg
       taiwan-coastal-train.jpg
     gui/
@@ -109,7 +132,7 @@ Please output:
 1. A structured travel-memory table
 2. Page format and layout suggestions
 3. An editable object manifest using IDs such as P1-IMG1 / P1-TXT1 / P1-CHR1 / P1-PNL1
-4. Style and character settings
+4. A selected visual route, style settings, and character settings
 5. A copyable image-generation prompt
 6. A localized revision instruction for replacing only the fireworks area later
 ```

@@ -1,7 +1,7 @@
 interface:
   display_name: "粘贴式旅行手帐"
-  short_description: "生成东亚贴纸手帐、小漫画和本地编辑工作台"
-  default_prompt: "Use $sticker-travel-scrapbook to turn my travel photos, itinerary, notes, tickets, and memories into an editable East Asian sticker-style travel scrapbook or mini-comic prompt pack, or launch the local GUI workbench."
+  short_description: "生成多风格东亚旅行手帐、可编辑对象清单和本地工作台"
+  default_prompt: "Use $sticker-travel-scrapbook to turn my travel photos, itinerary, notes, tickets, and memories into an editable East Asian travel scrapbook prompt pack. Choose a visual route such as cute sticker comic, black-and-white line sketch, map infographic scrapbook, or polaroid photo collage, or launch the local GUI workbench."
 
 policy:
   allow_implicit_invocation: true

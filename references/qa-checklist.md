@@ -12,7 +12,8 @@ Use this before finalizing page plans, prompts, generated-image critiques, or re
 
 ## Visual QA
 
-- The output reads as East Asian sticker-style scrapbook or mini-comic, not a clean itinerary board.
+- The output reads as the selected East Asian scrapbook visual route, not a clean itinerary board or generic photo book.
+- The route is explicit: cute sticker comic, black-and-white line sketch, map infographic scrapbook, polaroid photo collage, or hybrid.
 - Memory anchor scenes are more prominent than route logistics.
 - Photos/tickets/objects have clear replaceable slots.
 - Characters support memory scenes and remain consistent.

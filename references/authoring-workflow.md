@@ -4,7 +4,7 @@ Use this for full creation requests. The goal is a controllable authoring proces
 
 ## Flow
 
-`materials -> memory extraction -> page form -> editable object manifest -> style/character bible -> prompt pack -> QA -> revision contract`
+`materials -> memory extraction -> page form -> editable object manifest -> visual route -> style/character bible -> prompt pack -> QA -> revision contract`
 
 ## Step 1: Inventory Materials
 
@@ -42,7 +42,9 @@ Use the form that best preserves memory density:
 | Mini-comic page | emotional/funny/character actions matter | panels, speech bubbles, reaction stickers |
 | Hybrid scrapbook-comic | user wants both photos and character scenes | anchor collage plus 2-4 comic vignettes |
 
-## Step 4: Plan Page Zones
+## Step 4: Choose Visual Route And Plan Page Zones
+
+Choose the route that best fits the materials before writing final prompts: cute sticker comic, black-and-white line sketch, map infographic scrapbook, polaroid photo collage, or a hybrid.
 
 For each page, specify:
 

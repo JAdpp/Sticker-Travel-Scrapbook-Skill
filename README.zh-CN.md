@@ -6,25 +6,44 @@
 
 `sticker-travel-scrapbook` 是一个 Codex Skill，用来创建、规划、修改和交互式编辑东亚贴纸风旅行手帐页面与小漫画旅行日记。
 
-它的重点不是规整的旅行攻略或照片书，而是记忆优先的视觉创作：场景、情绪、同行者、食物、小物件、票据感碎片、照片槽位、贴纸、胶带和小漫画瞬间。
+它的重点不是规整的旅行攻略或照片书，而是记忆优先的视觉创作：场景、情绪、同行者、食物、小物件、票据感碎片、照片槽位、贴纸、地图、拍立得、线描速写和小漫画瞬间。
 
 ## 示例图集
 
-下面是公开安全的生成示例，不包含私人旅行照片、商业角色、品牌吉祥物、真实票据或私人肖像。
+下面是公开安全的生成示例，不包含私人旅行照片、商业角色、品牌吉祥物、真实票据或私人肖像。同一套可编辑对象流程可以支持不同视觉路线，不只是 Q 版漫画渲染。
 
 <table>
   <tr>
-    <td width="44%" rowspan="2" valign="top">
-      <strong>长条页：京都雨天寺社街</strong><br>
+    <td width="50%" valign="top">
+      <strong>Q 版贴纸漫画页</strong><br>
       <img src="assets/examples/kyoto-rainy-temple.jpg" alt="京都雨天寺社街手帐示例" width="100%">
     </td>
-    <td width="56%" valign="top">
-      <strong>单页：首尔韩屋村与夜市</strong><br>
-      <img src="assets/examples/seoul-hanok-market.jpg" alt="首尔韩屋村夜市手帐示例" width="100%">
+    <td width="50%" valign="top">
+      <strong>黑白线描速写</strong><br>
+      <img src="assets/examples/ink-line-rainy-temple.jpg" alt="黑白线描旅行手帐示例" width="100%">
     </td>
   </tr>
   <tr>
-    <td width="56%" valign="top">
+    <td width="50%" valign="top">
+      <strong>带地图的信息图手帐</strong><br>
+      <img src="assets/examples/map-infographic-coastal-train.jpg" alt="地图信息图旅行手帐示例" width="100%">
+    </td>
+    <td width="50%" valign="top">
+      <strong>拍立得照片拼贴</strong><br>
+      <img src="assets/examples/polaroid-weekend-notes.jpg" alt="拍立得照片拼贴旅行手帐示例" width="100%">
+    </td>
+  </tr>
+</table>
+
+其他版式示例：
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>单页：首尔韩屋村与夜市</strong><br>
+      <img src="assets/examples/seoul-hanok-market.jpg" alt="首尔韩屋村夜市手帐示例" width="100%">
+    </td>
+    <td width="50%" valign="top">
       <strong>双页：台湾海岸火车与灯笼老街</strong><br>
       <img src="assets/examples/taiwan-coastal-train.jpg" alt="台湾海岸火车手帐示例" width="100%">
     </td>
@@ -35,6 +54,7 @@
 
 - 把旅行素材整理成适合手帐创作的记忆场景。
 - 规划东亚贴纸风版式、小漫画版式和混合拼贴版式。
+- 在 Q 版贴纸漫画、黑白线描、地图信息图、拍立得照片拼贴等视觉路线中选择合适表达。
 - 生成可编辑对象清单，并使用 `P1-IMG1`、`P1-TXT1`、`P1-CHR1`、`P1-STK1`、`P1-PNL1` 等稳定 ID。
 - 维持多页之间的角色和视觉风格一致性。
 - 生成可复制到图像模型中的新图 prompt 或局部修改 prompt。
@@ -57,7 +77,10 @@ Sticker-Travel-Scrapbook/
     brand/
       banner.jpg
     examples/
+      ink-line-rainy-temple.jpg
       kyoto-rainy-temple.jpg
+      map-infographic-coastal-train.jpg
+      polaroid-weekend-notes.jpg
       seoul-hanok-market.jpg
       taiwan-coastal-train.jpg
     gui/
@@ -107,7 +130,7 @@ Use $sticker-travel-scrapbook。
 1. 旅行记忆结构表
 2. 页面形式与版式建议
 3. 可编辑对象清单，使用 P1-IMG1 / P1-TXT1 / P1-CHR1 / P1-PNL1 等 ID
-4. 风格与角色设定
+4. 视觉路线、风格与角色设定
 5. 可复制到图像模型的生图 prompt
 6. 如果后续只想替换烟花区域，应如何局部修改
 ```

@@ -15,6 +15,20 @@ The target is East Asian sticker-style travel memory art: dense, cute, layered, 
 - Character presence: recurring travelers may be central actors, not only corner mascots.
 - Small comic rhythm: reaction faces, speech bubbles, motion lines, "today's tiny episode" panels.
 
+## Visual Routes
+
+Choose a visual route before prompt writing. The route controls rendering language; the editable object manifest stays the same.
+
+| Route | Use When | Visual Notes |
+| --- | --- | --- |
+| `cute sticker comic` | the user wants character-heavy, playful, emotionally expressive travel pages | colorful chibi or light manga, speech bubbles, reaction stickers, food and souvenir cutouts |
+| `black-and-white line sketch` | the memory is quiet, rainy, museum-like, reflective, or needs printable zine energy | monochrome ink, grey wash, notebook margins, blank caption cards, stamps, minimal color accents |
+| `map infographic scrapbook` | route sequence, geography, or place relationships matter | illustrated route map as a main object, numbered stops, transport icons, photo slots, concise labels |
+| `polaroid photo collage` | real photos should dominate and characters should recede | instant-photo frames, taped snapshots, film grain, pressed flowers, map scraps, handwritten captions |
+| `hybrid scrapbook-comic` | the page needs both factual structure and emotional mini-scenes | combine a main map/photo/sketch route with 2-4 small comic panels or sticker clusters |
+
+Avoid making every public-safe example or user page look like the same colorful chibi manga collage. Keep the memory structure consistent while varying the rendering route.
+
 ## Information Hierarchy
 
 1. Page title/date and trip theme.
@@ -53,3 +67,4 @@ Use 3-8 panels for character action, plus photo/ticket stickers around panels.
 - Do not overload tiny Chinese paragraphs that image models will distort.
 - Do not use a single dominant palette if the trip has varied scenes; allow theme colors per day or place.
 - Do not make characters so large that photos, tickets, or place memories disappear.
+- Do not force Q-style/chibi characters into map-led, photo-led, or line-sketch routes unless the user asks.

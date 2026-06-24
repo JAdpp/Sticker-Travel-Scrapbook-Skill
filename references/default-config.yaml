@@ -6,13 +6,19 @@ defaults:
   new_page_default_forms:
     - "daily scrapbook page"
     - "hybrid scrapbook-comic page"
+  visual_routes:
+    - "cute sticker comic"
+    - "black-and-white line sketch"
+    - "map infographic scrapbook"
+    - "polaroid photo collage"
+    - "hybrid scrapbook-comic"
   aspect_ratios:
     phone_page: "9:16"
     wide_multi_day_spread: "3:1"
     desktop_spread: "16:9"
     square_social: "1:1"
     print_page: "A4/A5"
-  visual_priority: "memory-first sticker scrapbook and mini-comic authorship"
+  visual_priority: "memory-first sticker scrapbook authorship with explicit visual-route selection"
   text_policy: "large readable Chinese labels; exact text listed outside prompts"
 
 features:

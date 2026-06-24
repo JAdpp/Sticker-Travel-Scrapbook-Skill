@@ -43,7 +43,7 @@ If no reference exists, use neutral generic travelers. Do not mention private na
 Example:
 
 ```text
-Two generic cute young adult traveler avatars in East Asian sticker-comic style, one route/photo-oriented and one food/mood-oriented, consistent hairstyles and outfits across pages, small expressive chibi reactions, no proprietary character likeness.
+Two generic young adult traveler avatars matched to the selected visual route, one route/photo-oriented and one food/mood-oriented, consistent hairstyles and outfits across pages, small expressive reactions only when the page uses a comic route, no proprietary character likeness.
 ```
 
 ## Consistency Checklist

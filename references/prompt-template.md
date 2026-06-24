@@ -3,10 +3,13 @@
 Use this for final image prompts. Fill every bracket with page-specific content. Do not write "same as above".
 
 ```text
-Create a [aspect ratio] East Asian sticker-style travel scrapbook / mini-comic page in Chinese. The page should feel handmade, dense, cute, layered, and memory-first, not like a clean travel itinerary board or generic photo book.
+Create a [aspect ratio] East Asian sticker-style travel scrapbook page in Chinese using the selected visual route: [cute sticker comic / black-and-white line sketch / map infographic scrapbook / polaroid photo collage / hybrid]. The page should feel handmade, layered, object-rich, and memory-first, not like a clean travel itinerary board or generic photo book.
 
 Page concept:
 [Page title, date, city/place, emotional theme, and chosen form: daily scrapbook / multi-day spread / mini-comic / hybrid scrapbook-comic.]
+
+Visual route:
+[Name the route and explain why it fits the user's materials. Keep this stable across related pages unless the user asks for a style change.]
 
 Memory scenes:
 [List 3-8 memory scenes with place, event, emotion, and source material. Preserve exact user facts.]
@@ -21,7 +24,7 @@ Character consistency:
 [Use provided/local character references if available. Otherwise use public-safe generic traveler avatars. Specify identity, outfit family, pose, expression, and memory object interaction.]
 
 Visual style:
-East Asian 手帐 collage, cute sticker scrapbook, light manga diary details, white-border cutout photos, washi tape, torn paper, grid/notebook paper, ticket stubs, stamp marks, handwritten Chinese labels, short speech bubbles, small hearts/stars/check marks, warm varied colors matched to the trip, high-density but legible composition.
+[Write route-specific rendering language. Examples: cute sticker comic with light manga diary details; black-and-white ink line sketch with grey wash; map infographic with numbered memory stops; polaroid photo collage with taped instant-photo frames. Keep East Asian 手帐 collage cues: white-border slots, washi tape, torn paper, grid/notebook paper, stamp marks, handwritten labels, and high-density but legible composition.]
 
 Text handling:
 Use large readable handwritten Chinese for intentional text. Keep labels short. Exact text to render: [list exact titles, captions, labels, speech bubbles]. Avoid tiny paragraphs or garbled small text.
@@ -38,3 +41,4 @@ Do not make a route-first travel guide page unless explicitly requested. Do not 
 - For multi-day spreads, keep each day visually separated while sharing one style bible.
 - For mini-comics, include panel count and panel purpose.
 - For photo replacement workflows, ask the image model to leave clear, separate sticker slots.
+- For style diversity, explicitly name the visual route; do not let every prompt drift back to colorful chibi manga.
