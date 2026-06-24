@@ -65,8 +65,6 @@ Sticker-Travel-Scrapbook/
     character-profile.example.yaml
 ```
 
-请不要把私人旅行照片、角色设定图、真实票据、酒店信息或个人生成图提交到公开仓库。
-
 ## 安装
 
 把这个仓库文件夹复制到 Codex 的 skills 目录，并把文件夹名保持为 `sticker-travel-scrapbook`。
@@ -85,7 +83,7 @@ C:\Users\<you>\.codex\skills\sticker-travel-scrapbook
 
 ```text
 Use $sticker-travel-scrapbook。
-我想做一张东亚贴纸风旅行手帐/小漫画页面，不是规整旅行攻略。
+我想做一张东亚贴纸风旅行手帐/小漫画页面。
 
 旅行内容：
 6 月 19 日，城市乐园夜游，夏日祭。重点记忆包括夜间灯光、小型巡游、过山车、小吃、烟花、在人群中散步返程。整体情绪是兴奋、热闹、有庆祝感。
@@ -136,19 +134,6 @@ python "C:\Users\<you>\.codex\skills\sticker-travel-scrapbook\scripts\server.py"
 
 没有 `OPENAI_API_KEY` 时，GUI 仍然可以构建和导出 prompt；点击直接生图会显示明确的 API key 提示。
 
-## 隐私与公开素材
-
-不要提交：
-
-- 私人角色参考图。
-- 真实旅行照片。
-- 票据扫描件或酒店信息。
-- 个人位置记录或历史导出。
-- 含有私人肖像或私人 IP 的生成图。
-- API key、cookie 或账号数据。
-
-公开示例应使用原创通用旅人、空白票据感碎片、抽象说明线条和公开安全的旅行场景。
-
 ## 校验
 
 可以用 skill creator 的校验脚本检查 Skill：
@@ -167,5 +152,3 @@ Skill is valid!
 ## 当前边界
 
 这是一个 Skill 加本地 GUI 原型。GUI 可以构建/导出 prompt，也可以在配置 `OPENAI_API_KEY` 后直接调用 OpenAI Images API。
-
-它还不是完整的 plugin/MCP 桥接：也就是说，GUI 按钮目前不会自动唤醒 Codex 并让 Codex 调用内部生图工具。
