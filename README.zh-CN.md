@@ -1,4 +1,4 @@
-![Sticker Travel Scrapbook banner](assets/brand/banner.jpg)
+![Trip Canvas banner](assets/brand/banner.jpg)
 
 # Trip Canvas 旅行手帐 Skill
 
