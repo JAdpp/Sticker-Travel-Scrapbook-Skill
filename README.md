@@ -16,7 +16,7 @@
   <img src="https://img.shields.io/badge/Local-GUI-0ea5e9" alt="Local GUI">
 </p>
 
-Trip Canvas is the shorter product name for `sticker-travel-scrapbook`, a Codex Skill for creating, planning, revising, and interactively editing multi-style travel scrapbook pages, visual travel journals, and mini-comic travel diaries.
+Trip Canvas (`trip-canvas`) is a Codex Skill for creating, planning, revising, and interactively editing multi-style travel scrapbook pages, visual travel journals, and mini-comic travel diaries.
 
 It is built for memory-first visual authoring: personal scenes, moods, companions, meals, objects, ticket-like scraps, photo slots, stickers, maps, polaroids, watercolor pages, vintage ephemera, urban sketches, black-and-white doodles, and small comic moments. It is not a route-first itinerary board or a clean travel photo book.
 
@@ -86,12 +86,12 @@ Visual route examples:
 
 This repository follows the [Agent Skills](https://agentskills.io/) structure: a root `SKILL.md` with YAML frontmatter, plus optional `references/`, `scripts/`, and `assets/` directories for progressive disclosure.
 
-The installable Skill id remains `sticker-travel-scrapbook`. If you rename the folder, keep the folder name and the `name` field in `SKILL.md` identical.
+The installable Skill id is `trip-canvas`. If you rename the folder, keep the folder name and the `name` field in `SKILL.md` identical.
 
 ## 📁 Repository Layout
 
 ```text
-sticker-travel-scrapbook/
+trip-canvas/
   SKILL.md
   README.md
   README.zh-CN.md
@@ -136,18 +136,17 @@ In Claude Code, Codex, OpenClaw, or any Agent that supports Skills, just say:
 
 ```text
 Help me install this skill:
-https://github.com/JAdpp/Sticker-Travel-Scrapbook-Skill
-Please install it as the skill folder named sticker-travel-scrapbook.
+https://github.com/JAdpp/trip-canvas
 ```
 
-The Agent should clone or copy it into the right skills directory for your environment. Keep the installed folder name as `sticker-travel-scrapbook`, because `SKILL.md` uses that id.
+The Agent should clone or copy it into the right skills directory for your environment. Keep the installed folder name as `trip-canvas`, because `SKILL.md` uses that id.
 
-Manual fallback: copy this repository folder into a skills directory and name the folder `sticker-travel-scrapbook`.
+Manual fallback: copy this repository folder into a skills directory and name the folder `trip-canvas`.
 
 On Windows, a user-level location is typically:
 
 ```powershell
-C:\Users\<you>\.codex\skills\sticker-travel-scrapbook
+C:\Users\<you>\.codex\skills\trip-canvas
 ```
 
 If Codex does not detect the Skill immediately, restart Codex or start a new thread.
@@ -157,7 +156,7 @@ If Codex does not detect the Skill immediately, restart Codex or start a new thr
 Explicitly invoke the Skill. For a beginner-friendly flow, you can simply give the trip materials and let Codex guide the missing decisions:
 
 ```text
-Use $sticker-travel-scrapbook.
+Use $trip-canvas.
 I want to create a travel scrapbook / visual journal / mini-comic page, but I am not sure about the exact style and layout yet.
 
 Trip content:
@@ -178,7 +177,7 @@ If the style, layout, text, characters, and generation target are already clear,
 Revision example:
 
 ```text
-Use $sticker-travel-scrapbook.
+Use $trip-canvas.
 I like the whole scrapbook page. Only replace P3-IMG2 with my uploaded real photo.
 Keep the people, title, museum cards, captions, and overall layout unchanged.
 Give me only a localized revision prompt.
@@ -191,7 +190,7 @@ The Skill includes a lightweight local GUI for full manual control. It starts fr
 Launch it with:
 
 ```powershell
-python "C:\Users\<you>\.codex\skills\sticker-travel-scrapbook\scripts\server.py" --project ".\sticker-travel-scrapbook-project.json"
+python "C:\Users\<you>\.codex\skills\trip-canvas\scripts\server.py" --project ".\trip-canvas-project.json"
 ```
 
 Then open the printed local URL, usually:
@@ -208,7 +207,7 @@ The GUI can call the OpenAI Images API if `OPENAI_API_KEY` is set in the server 
 
 ```powershell
 $env:OPENAI_API_KEY="sk-..."
-python "C:\Users\<you>\.codex\skills\sticker-travel-scrapbook\scripts\server.py" --project ".\sticker-travel-scrapbook-project.json"
+python "C:\Users\<you>\.codex\skills\trip-canvas\scripts\server.py" --project ".\trip-canvas-project.json"
 ```
 
 ## 📌 Current Boundary

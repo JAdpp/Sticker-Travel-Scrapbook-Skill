@@ -1,5 +1,5 @@
 ---
-name: sticker-travel-scrapbook
+name: trip-canvas
 description: "Use when the user wants to create, plan, revise, evaluate, or interactively edit multi-style travel scrapbook pages, visual travel journals, dense collage diaries, itinerary-memory pages, mini-comic travel handbooks, East Asian sticker-style pages, black-and-white cartoon doodle journals, map-infographic scrapbook pages, polaroid photo collage journals, watercolor travel journals, vintage scrapbook pages, urban sketch journals, minimalist line-art pages, or mixed-media travel journals from photos, itinerary text, tickets, notes, screenshots, character references, or an existing generated scrapbook image. Also use when the user asks for a GUI, canvas, local app, object editor, project JSON, prompt-pack exporter, or local web workbench. Specializes in memory-first multimodal authoring: focused questions, visual-route choice, component/object drafts, prompts or direct image generation, GUI control, and localized revisions."
 ---
 
@@ -140,7 +140,7 @@ When the user asks for GUI, interface, canvas, local app, object editor, or inte
 Default launch command, blank project:
 
 ```powershell
-python "C:\Users\74783\.codex\skills\sticker-travel-scrapbook\scripts\server.py" --project ".\sticker-travel-scrapbook-project.json"
+python "C:\Users\74783\.codex\skills\trip-canvas\scripts\server.py" --project ".\trip-canvas-project.json"
 ```
 
 The GUI is a local web workbench and manual control mode for materials, pages, editable object IDs, object inspection, JSON import/export, prompt-pack export, localized revision prompt generation, and optional API-backed image generation. It complements the agent-led workflow: Codex can create or revise a project plan conversationally, while the GUI lets the user inspect and directly edit the same structure.

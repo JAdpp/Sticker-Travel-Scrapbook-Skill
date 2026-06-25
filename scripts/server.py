@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Local GUI server for the sticker-travel-scrapbook skill.
+"""Local GUI server for the trip-canvas skill.
 
 This intentionally uses only the Python standard library so the GUI can run
 without npm, Flask, or other runtime dependencies.
@@ -27,13 +27,13 @@ BLANK_PROJECT = GUI_ROOT / "blank-project.json"
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Run the sticker travel scrapbook GUI.")
+    parser = argparse.ArgumentParser(description="Run the Trip Canvas GUI.")
     parser.add_argument("--host", default="127.0.0.1", help="Bind host. Default: 127.0.0.1")
     parser.add_argument("--port", type=int, default=8765, help="Preferred port. Default: 8765")
     parser.add_argument(
         "--project",
-        default="sticker-travel-scrapbook-project.json",
-        help="Project JSON to load/save. Default: ./sticker-travel-scrapbook-project.json",
+        default="trip-canvas-project.json",
+        help="Project JSON to load/save. Default: ./trip-canvas-project.json",
     )
     parser.add_argument(
         "--demo",

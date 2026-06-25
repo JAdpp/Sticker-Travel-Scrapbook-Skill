@@ -32,13 +32,13 @@ It is not a full Photoshop/Figma replacement and it is not the whole Skill by it
 From a workspace folder where the project JSON should live:
 
 ```powershell
-python "C:\Users\74783\.codex\skills\sticker-travel-scrapbook\scripts\server.py" --project ".\sticker-travel-scrapbook-project.json"
+python "C:\Users\74783\.codex\skills\trip-canvas\scripts\server.py" --project ".\trip-canvas-project.json"
 ```
 
 Optional arguments:
 
 ```powershell
-python "C:\Users\74783\.codex\skills\sticker-travel-scrapbook\scripts\server.py" --host 127.0.0.1 --port 8765 --project ".\my-trip-project.json"
+python "C:\Users\74783\.codex\skills\trip-canvas\scripts\server.py" --host 127.0.0.1 --port 8765 --project ".\my-trip-project.json"
 ```
 
 The server automatically moves to the next available port if the preferred port is occupied.
@@ -46,14 +46,14 @@ The server automatically moves to the next available port if the preferred port 
 To start with the bundled Shanghai demo instead of a blank project when the project file does not exist:
 
 ```powershell
-python "C:\Users\74783\.codex\skills\sticker-travel-scrapbook\scripts\server.py" --project ".\demo-trip-project.json" --demo
+python "C:\Users\74783\.codex\skills\trip-canvas\scripts\server.py" --project ".\demo-trip-project.json" --demo
 ```
 
 To enable GUI image generation, set `OPENAI_API_KEY` before launching the server:
 
 ```powershell
 $env:OPENAI_API_KEY="sk-..."
-python "C:\Users\74783\.codex\skills\sticker-travel-scrapbook\scripts\server.py" --project ".\sticker-travel-scrapbook-project.json"
+python "C:\Users\74783\.codex\skills\trip-canvas\scripts\server.py" --project ".\trip-canvas-project.json"
 ```
 
 ## Runtime Files

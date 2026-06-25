@@ -51,7 +51,7 @@ gui:
   demo_project: "assets/gui/demo-project.json"
   default_host: "127.0.0.1"
   default_port: 8765
-  default_project_file: "sticker-travel-scrapbook-project.json"
+  default_project_file: "trip-canvas-project.json"
   default_project_mode: "blank"
   image_generation_provider: "openai_images_api_when_OPENAI_API_KEY_is_set"
   image_generation_endpoint: "/api/generate-image"
