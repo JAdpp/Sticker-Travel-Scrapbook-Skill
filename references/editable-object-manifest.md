@@ -38,6 +38,7 @@ When planning a new page and an image-generation tool/API is available, turn the
 
 ## Editable Rules
 
+- In polished final artwork, object IDs are not visible labels. Keep them in the manifest, prompt notes, GUI metadata, and revision instructions unless the user asks for an object-map preview.
 - Photo slots should keep border, tilt, approximate size, and label position during replacement.
 - Text slots should have an exact text list outside the image prompt when correctness matters.
 - Character slots should keep identity and role stable even if pose changes.

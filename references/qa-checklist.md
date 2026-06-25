@@ -13,7 +13,9 @@ Use this before finalizing page plans, prompts, generated-image critiques, or re
 ## Visual QA
 
 - The output reads as the selected scrapbook visual route, not a clean itinerary board or generic photo book.
+- The first polished image is save-worthy and emotionally complete enough to retain the user before revision.
 - For new page planning with image generation available, a low-fidelity layout/object-map preview is generated before asking for final-page approval.
+- For direct generation, the first visible image is a polished final-art candidate, not a low-fidelity preview.
 - The preview is clearly a planning sketch, not a polished final scrapbook image.
 - The route is explicit: East Asian sticker comic, kawaii sticker journal, black-and-white cartoon doodle, map infographic scrapbook, polaroid photo collage, watercolor travel journal, vintage ephemera scrapbook, urban sketch journal, minimalist line journal, comic book travel page, mixed-media collage, or hybrid.
 - If the route is black-and-white cartoon doodle, it uses simple marker-like line art and avoids grayscale detailed manga or realistic shading.
@@ -22,11 +24,13 @@ Use this before finalizing page plans, prompts, generated-image critiques, or re
 - Characters support memory scenes and remain consistent.
 - Text labels are short and large enough for image models.
 - Decorative stickers do not cover important objects.
+- Sticker-comic routes have enough finished-page density: strong title, border/binding, tape/shadows, reaction stickers, and scene-specific motifs.
 
 ## Editability QA
 
 - Each page has a manifest.
 - Object IDs are stable and unique.
+- Object IDs are not visibly rendered in final artwork unless the user requested an object-map preview.
 - Revision instructions name what is preserved and what changes.
 - The prompt does not flatten every element into an inseparable illustration.
 - The object map preview labels major editable slots with stable IDs.

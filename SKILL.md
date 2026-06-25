@@ -7,7 +7,9 @@ description: "Use when the user wants to create, plan, revise, evaluate, or inte
 
 ## Mission
 
-Turn travel materials into an agent-led, editable multi-style travel scrapbook authoring workflow. Do not stop at being a prompt generator: guide users from itinerary/photos/notes to memory structure, style and character decisions, component/object drafts, automatic low-fidelity layout/object-map previews when image generation is available, prompts, optional final image generation, and later revisions. Prioritize personal memory-making, visual play, scrapbook texture, character or photo continuity, visual-route choice, and local editability over route-first travel-guide readability.
+Turn travel materials into an agent-led, editable multi-style travel scrapbook authoring workflow. Do not stop at being a prompt generator: guide users from itinerary/photos/notes to memory structure, style and character decisions, component/object drafts, automatic low-fidelity layout/object-map previews when image generation is useful, prompts, optional final image generation, and later revisions. Prioritize first-draft artistic completeness, personal memory-making, visual play, scrapbook texture, character or photo continuity, visual-route choice, and local editability over route-first travel-guide readability.
+
+The first polished image shown to the user must be strong enough to earn continuation: it should feel save-worthy, social-shareable, and emotionally complete before any later editing. Editability is the hidden scaffold, not a reason to accept a weak first impression.
 
 Use this Skill for:
 
@@ -22,7 +24,7 @@ Use this Skill for:
 
 Do not treat the output as a normal travel diary, photo book, itinerary board, or generic collage poster. Treat it as a handmade-feeling visual memory artifact:
 
-`real trip materials -> sufficiency check -> memory scenes -> page/story structure -> editable object manifest -> visual route + style/character bible -> component draft -> low-fidelity layout/object-map preview -> user confirmation -> image prompts, direct generation, GUI project, or local revision instructions`
+`real trip materials -> sufficiency check -> memory scenes -> page/story structure -> visual route + first-draft art direction -> editable object manifest -> component draft -> low-fidelity layout/object-map preview when useful -> user confirmation -> polished image prompts, direct generation, GUI project, or local revision instructions`
 
 The page may include route facts, weather, tickets, hotel, or maps, but these are supporting anchors. The main subject is the user's remembered experience, scenes, moods, companions, food, objects, jokes, and small visual episodes.
 
@@ -48,6 +50,8 @@ The page may include route facts, weather, tickets, hotel, or maps, but these ar
 Default to `agent-led guided workflow` when the user provides travel materials but does not know exactly how the page should look. In this mode, read the materials, infer a reasonable first draft, and ask only the smallest useful set of follow-up questions.
 
 Use `direct execution` when the user already gives clear style, character, layout, text, and generation instructions. Do not slow them down with unnecessary questions.
+
+When the user asks to generate an image directly, treat the first generated image as a polished final-art candidate, not as a planning artifact. Do not show a low-fidelity preview first unless the user requested planning, GUI control, or staged review.
 
 Use `GUI control mode` when the user asks for GUI, canvas, local app, object editor, manual control, or project JSON. The GUI gives the user direct control over materials, pages, objects, prompts, and optional API-backed image generation.
 
@@ -117,7 +121,17 @@ Do not use copyrighted/proprietary character names, likenesses, or distinctive t
 
 ### 6. Prepare Components, Prompts, Or Generation
 
-For new pages, produce a staged authoring result rather than only a prompt:
+For new pages, produce a staged authoring result rather than only a prompt. Use these clean section labels for user-facing output:
+
+1. `旅行记忆结构化`
+2. `缺失信息与默认假设`
+3. `页面形式与版式建议 + 草图预览`
+4. `可编辑对象清单与组件草案 + 对象地图`
+5. `风格、人物形象与文字清单`
+6. `生图 prompt / 组件 prompt`
+7. `下一步确认`
+
+If older garbled labels appear in this file, ignore them and use the clean labels above.
 
 1. `【1. 旅行记忆结构化】`
 2. `【2. 缺失信息与默认假设】`
@@ -129,7 +143,9 @@ For new pages, produce a staged authoring result rather than only a prompt:
 
 In the component draft, separate the final page into replaceable units: photo slots, generated scene panels, character stickers, decorative stickers, map/ticket scraps, text cards, speech bubbles, and background paper. If the user wants staged control, ask them to confirm or revise these components before final page generation.
 
-After sections 3 and 4, if an image-generation tool/API is available and the user did not opt out, automatically generate a low-fidelity planning preview before asking for final-page confirmation. Do not treat this as the final scrapbook image. The preview should usually be one planning-board image containing:
+Before final-image generation, add a visible "first-draft art direction" layer to the prompt: strong title treatment, page border or notebook binding, dense but readable sticker rhythm, emotional reaction stickers, varied materials, polished shadows/tape, and a clear hero-to-supporting-scene hierarchy. Object IDs should guide the agent and revision contract outside the image; do not ask the final image model to literally render object IDs.
+
+After sections 3 and 4, if an image-generation tool/API is available and the user is in planning or staged-review mode, automatically generate a low-fidelity planning preview before asking for final-page confirmation. Do not treat this as the final scrapbook image. The preview should usually be one planning-board image containing:
 
 - a rough page layout sketch with large zones for title/date, anchor image, memory clusters, panels, photo slots, maps/tickets, captions, and decorative stickers.
 - an editable object map that visibly labels the same zones with IDs such as `P1-IMG1`, `P1-TXT1`, `P1-CHR1`, `P1-PNL1`, `P1-STK1`, and `P1-BG1`.
@@ -160,9 +176,11 @@ If `OPENAI_API_KEY` is set before launching the server, the GUI can call the Ope
 
 - Optimize for personal memory, sticker collage, and visual authorship before travel-guide utility.
 - Do not reduce full creation requests to one prompt. Use guided questions, object/component planning, confirmation, and generation/export steps.
-- For new page planning, do not stop at pure text for layout and object manifest when image generation is available; create a low-fidelity layout/object-map preview automatically.
+- For new page planning, do not stop at pure text for layout and object manifest when image generation is available; create a low-fidelity layout/object-map preview automatically in planning/staged-review mode.
+- For direct image generation, the first image must be a polished final-art candidate with high sticker-comic completion, not a planning board or object-map-looking collage.
 - Preserve user facts and user-written captions unless explicitly asked to revise them.
 - Keep every page locally editable through stable object IDs.
+- Keep object IDs in the manifest and revision instructions. Do not make visible ID labels part of the final artwork unless the user explicitly asks for an object-map preview.
 - Keep characters consistent, but do not let character art erase memory materials.
 - Use large, readable Chinese labels for intentional text; avoid tiny paragraph text inside image prompts.
 - Treat AI-generated Chinese text as high-risk; provide a text overlay plan or separate exact text list when correctness matters.

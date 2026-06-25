@@ -14,6 +14,7 @@ The target is memory-first travel scrapbook and visual journal art: layered, obj
 - Short readable labels: use large captions, date badges, speech bubbles, and mood notes; keep long writing outside the image prompt when fidelity matters.
 - Style-specific density: sticker/comic routes can be dense; minimalist and watercolor routes need more air.
 - Personal continuity: recurring people, pets, or avatars should stay consistent when used, but photo-led routes may keep characters minimal.
+- First-draft completion: the first polished output should look like a finished scrapbook page, not a neutral photo-slot template. Use cover-like title treatment, border/binding details, polished tape/shadows, and enough scene-specific stickers to create immediate delight.
 
 ## Visual Routes
 
@@ -69,6 +70,18 @@ Use 3-8 panels for character action, plus photo/ticket/map stickers around panel
 ### Photo-Led Social Page
 
 Use a small set of dominant photo frames with sparse stickers and captions. Good when the user provides strong photos and wants a social-ready image.
+
+## Sticker-Comic First Draft Bar
+
+For East Asian sticker comic, kawaii sticker journal, comic book travel page, and hybrid scrapbook-comic pages, the first draft should usually include:
+
+- one large expressive title/header and a date/location badge.
+- a complete page frame such as ring binding, notebook edge, torn-paper border, or layered washi tape.
+- at least one hero scene that is visually bigger than the rest.
+- scene-specific reaction stickers, not only generic hearts and stars.
+- small diary cards or emotion scorecards when they add charm, but only as suggested decoration, not invented facts.
+- a mix of real-photo feel and illustrated embellishment, so the page reads as both memory artifact and finished art.
+- object slots that are visually integrated into the artwork rather than exposed as blank production boxes.
 
 ## Negative Rules
 

@@ -4,7 +4,7 @@ Use this for full creation requests. The goal is a controllable agent-led author
 
 ## Flow
 
-`materials -> sufficiency check -> focused questions or labeled defaults -> memory extraction -> page form -> editable object manifest -> visual route -> style/character bible -> component draft -> low-fidelity layout/object-map preview -> confirmation -> prompt pack, direct generation, or GUI project -> QA -> revision contract`
+`materials -> sufficiency check -> focused questions or labeled defaults -> memory extraction -> page form -> visual route -> first-draft art direction -> editable object manifest -> style/character bible -> component draft -> low-fidelity layout/object-map preview when useful -> confirmation -> polished prompt pack, direct generation, or GUI project -> QA -> revision contract`
 
 ## Step 0: Decide How Much To Ask
 
@@ -12,7 +12,7 @@ Do not require the user to already know the final scrapbook design. Many users w
 
 - If the brief is clear enough, proceed with labeled default assumptions.
 - If important choices are missing, ask up to three focused questions at a time.
-- If the user explicitly asks for immediate generation and the materials are sufficient, do not force a confirmation round.
+- If the user explicitly asks for immediate generation and the materials are sufficient, do not force a confirmation round and do not show a low-fidelity preview as the first visible image.
 - If the user asks for full manual control, move to the GUI workflow.
 
 High-value questions usually concern visual route, character/persona treatment, page count/aspect ratio, must-keep captions, and whether to generate components first or the final page directly.
@@ -67,6 +67,21 @@ For each page, specify:
 - decorative sticker/tape/stamp zone.
 - fact anchor zone for times, tickets, place names, or route fragments.
 
+## Step 4.5: Set The First-Draft Art Direction
+
+Before writing the final image prompt, specify the visual quality bar for the first polished draft. The first draft must feel like a finished scrapbook page, not merely an editable planning document.
+
+Include:
+
+- a strong title treatment or cover-like header.
+- a clear hero scene plus supporting scenes, not equal-weight boxes everywhere.
+- dense but readable sticker rhythm for sticker/comic routes: tape, stamps, stars, tears, hearts, arrows, small icons, reaction bubbles, and notebook scraps.
+- varied material texture: paper, washi tape, photo borders, ticket-card scraps, torn edges, shadows, and handwritten labels.
+- emotional storytelling cues around each memory, such as excitement, tears, awe, immersion, coziness, fatigue, or surprise.
+- restrained object scaffolding: keep replacement slots clear, but do not let the page look like a wireframe, template, or asset map.
+
+For direct generation, this art direction is mandatory. For planning mode, it can be summarized after the low-fidelity preview.
+
 ## Step 5: Produce The Contract And Component Draft
 
 Always produce an editable object manifest before final prompts. Each prompt should be traceable back to object IDs.
@@ -83,7 +98,9 @@ When the user wants staged control, present these components for confirmation or
 
 ## Step 6: Generate A Low-Fidelity Planning Preview
 
-After the page form, zones, visual route, and object manifest are clear, create a visual planning preview when an image-generation tool/API is available. This preview is part of planning, not the final artwork, so do not ask the user to approve final generation before making it unless they opted out of previews.
+After the page form, zones, visual route, and object manifest are clear, create a visual planning preview when the user is in planning/staged-review mode and an image-generation tool/API is available. This preview is part of planning, not the final artwork, so do not ask the user to approve final generation before making it unless they opted out of previews.
+
+Skip this preview when the user explicitly asks for direct final image generation. In that case, generate a polished final-art candidate first and provide the manifest/revision contract around it.
 
 Generate one concise planning-board image by default:
 
