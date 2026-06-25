@@ -211,3 +211,7 @@ python "C:\Users\<you>\.codex\skills\trip-canvas\scripts\server.py" --project ".
 ## 📌 当前边界
 
 这是一个 Skill 加本地 GUI 原型。默认 Skill 行为是由 Codex 主动推进的手帐创作流程；prompt pack 和 GUI 是这个流程中的两种控制方式。是否能直接生图取决于用户当前 Codex/运行环境中可用的图像工具或 API key。
+
+## 📄 许可证
+
+本项目遵循 MIT 协议，详见 [LICENSE](LICENSE)。

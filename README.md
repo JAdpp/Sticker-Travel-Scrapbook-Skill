@@ -212,3 +212,7 @@ python "C:\Users\<you>\.codex\skills\trip-canvas\scripts\server.py" --project ".
 
 This is a Skill plus local GUI prototype. The default Skill behavior is an agent-led scrapbook authoring workflow; prompt packs and the GUI are two control surfaces inside that workflow. Direct image generation depends on the image tools or API keys available in the user's Codex/runtime environment.
 
+## 📄 License
+
+MIT License. See [LICENSE](LICENSE).
+

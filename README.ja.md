@@ -213,3 +213,7 @@ python "C:\Users\<you>\.codex\skills\trip-canvas\scripts\server.py" --project ".
 ## 📌 現在の範囲
 
 これは Skill とローカル GUI のプロトタイプです。標準の Skill 動作は、Codex が能動的に進めるスクラップブック制作ワークフローです。プロンプトパックと GUI は、そのワークフロー内の二つのコントロール方法です。直接画像生成できるかどうかは、ユーザーの Codex/実行環境で利用できる画像ツールまたは API key に依存します。
+
+## 📄 ライセンス
+
+MIT License で公開しています。詳しくは [LICENSE](LICENSE) を参照してください。
